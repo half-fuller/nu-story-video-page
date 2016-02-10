@@ -1,0 +1,29 @@
+@import "ibm-colors.scss";
+
+// Set background to blue 20
+.test {
+  background: color('blue', 20);
+}
+
+// Create classes like .red-10, .red-20 with associated
+// hex values as the background for for all red palette colors
+@each $hue, $hex in get-colors('red') {
+  .red-hue-#{$hue} {
+    background: $hex;
+  }
+}
+
+// Create classes like .blue-10, .blue-20  with their associated
+// hex values as the background for all color pallete colors
+@each $family, $family_map in get-colors('all') {
+  @each $hue, $hex in $family_map {
+    .#{$family}-#{$hue} {
+      background: $hex;
+    }
+  }
+}
+
+// For debugging
+@each $family in get-colors() {
+  //@debug family;
+}

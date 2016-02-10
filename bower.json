@@ -1,0 +1,16 @@
+{
+  "name": "nustory__player",
+  "description": "The video player page on nustory.com",
+  "main": "index.html",
+  "authors": [
+    "half-fuller <david@half-fuller.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "video"
+  }
+}

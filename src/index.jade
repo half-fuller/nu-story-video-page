@@ -1,0 +1,17 @@
+doctype html
+html(lang='en')
+  include ./markup/head.jade
+
+  body
+    #header.skehead-headernav.clearfix
+      .glow
+        #skehead
+          .container
+            .row-fluid
+              #logo.span4
+                a.logo(href="http://localhost:8000", title="nustory"): img.logo(src="img/nuStory_logo.png" alt="nu|story")
+              #top-nav-menu.span8
+                #skenav.ske-menu
+                  ul#menu-main.menu(sf-arrows sf-js-enabled)
+                    li.page_item.page-item-2: a(href='#', title="Sample Page") Sample Page
+              .clearfix
