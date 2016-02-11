@@ -6,6 +6,7 @@ var gulp = require('gulp'),
     rename = require('gulp-rename'),
     jade = require('gulp-jade'),
     webserver = require('gulp-webserver');
+    image = require('gulp-image');
 
     gulp.task('lint', function (argument) {
       return gulp.src('src/js/*.js')
@@ -35,6 +36,22 @@ var gulp = require('gulp'),
           .pipe(gulp.dest('dist'));
     });
 
+    gulp.task('image', function () {
+      return gulp.src('src/img/*')
+          .pipe(image({
+            pngquant: true,
+            optipng: false,
+            zopflipng: true,
+            advpng: true,
+            jpegRecompress: false,
+            jpegoptim: true,
+            mozjpeg: true,
+            gifsicle: true,
+            svgo: true
+          }))
+          .pipe(gulp.dest('dist/img'));
+    })
+
     gulp.task('watch', function () {
       gulp.watch('src/js/*.js', ['lint', 'scripts']);
       gulp.watch('src/js/**/*.js', ['lint', 'scripts']);
@@ -42,6 +59,7 @@ var gulp = require('gulp'),
       gulp.watch('src/**/*.scss', ['sass']);
       gulp.watch('src/*.jade', ['jade']);
       gulp.watch('src/**/*.jade', ['jade']);
+      gulp.watch('src/img/*', ['image']);
     });
 
     gulp.task('webserver', function () {
@@ -52,6 +70,6 @@ var gulp = require('gulp'),
           }));
     });
 
-    gulp.task('default', ['lint', 'sass', 'scripts', 'jade']);
+    gulp.task('default', ['lint', 'sass', 'scripts', 'jade', 'image']);
 
     gulp.task('serve', ['default', 'webserver', 'watch']);

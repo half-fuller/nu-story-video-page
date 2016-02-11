@@ -12,9 +12,9 @@ Tags: blue,gray,orange,pink,purple,dark,light,two-columns,right-sidebar,left-sid
 
 .clear {clear:both;}
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {background: transparent;border: 0;margin: 0;padding: 0;vertical-align: baseline;}
-body { color: #666;  font-family: 'Open Sans', sans-serif;  font-size: 12px;  line-height: 22px;font-weight:300; background: #eeeeee;}
-p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset, figure {font-weight: 300;  margin-bottom: 20px;  line-height: 22px;}
-h1, h2, h3, h4, h5, h6{ color: #555555;font-family: 'Open Sans', sans-serif;font-weight: normal;letter-spacing: -0.5px;}
+body { color: #555555; font-size: 14px;  line-height: 22px;}
+p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset, figure {font-weight: 400;  margin-bottom: 20px;  line-height: 22px;}
+h1, h2, h3, h4, h5, h6{ color: #555555;font-family: "lato", verdana, sans-serif; font-weight: 400;}
 pre {  overflow: auto;  width: 98%;}
 embed {max-width: 100%;}
 ol{list-style: decimal outside none;}
@@ -44,6 +44,17 @@ a:hover{ color: #555; }
 -------------------------------------------------------------- */
 body.page-template-template-front-page-php #main{margin-top:0 !important;}
 #header { padding: 0;  position: relative;   z-index: 9999; box-shadow: 3px 0 2px rgba(0, 0, 0, 0.5); max-height: 85px;}
+
+#header:before {content: ''; width: 100%; height: 4px; position: absolute; top: 0; left: 0;
+  background: rgba(166,38,110,1);
+  background: -moz-linear-gradient(left, rgba(166,38,110,1) 0%, rgba(166,38,110,1) 25%, rgba(0,180,159,1) 25%, rgba(0,180,159,1) 50%, rgba(65,119,190,1) 50%, rgba(65,119,190,1) 75%, rgba(89,167,0,1) 75%, rgba(89,167,0,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(166,38,110,1)), color-stop(25%, rgba(166,38,110,1)), color-stop(25%, rgba(0,180,159,1)), color-stop(50%, rgba(0,180,159,1)), color-stop(50%, rgba(65,119,190,1)), color-stop(75%, rgba(65,119,190,1)), color-stop(75%, rgba(89,167,0,1)), color-stop(100%, rgba(89,167,0,1)));
+  background: -webkit-linear-gradient(left, rgba(166,38,110,1) 0%, rgba(166,38,110,1) 25%, rgba(0,180,159,1) 25%, rgba(0,180,159,1) 50%, rgba(65,119,190,1) 50%, rgba(65,119,190,1) 75%, rgba(89,167,0,1) 75%, rgba(89,167,0,1) 100%);
+  background: -o-linear-gradient(left, rgba(166,38,110,1) 0%, rgba(166,38,110,1) 25%, rgba(0,180,159,1) 25%, rgba(0,180,159,1) 50%, rgba(65,119,190,1) 50%, rgba(65,119,190,1) 75%, rgba(89,167,0,1) 75%, rgba(89,167,0,1) 100%);
+  background: -ms-linear-gradient(left, rgba(166,38,110,1) 0%, rgba(166,38,110,1) 25%, rgba(0,180,159,1) 25%, rgba(0,180,159,1) 50%, rgba(65,119,190,1) 50%, rgba(65,119,190,1) 75%, rgba(89,167,0,1) 75%, rgba(89,167,0,1) 100%);
+  background: linear-gradient(to right, rgba(166,38,110,1) 0%, rgba(166,38,110,1) 25%, rgba(0,180,159,1) 25%, rgba(0,180,159,1) 50%, rgba(65,119,190,1) 50%, rgba(65,119,190,1) 75%, rgba(89,167,0,1) 75%, rgba(89,167,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6266e', endColorstr='#59a700', GradientType=1 );}
+
 .skehead-headernav{ left: 0;top: 0;width: 100%;z-index: 200;}
 #header.skehead-headernav.skehead-headernav-shrink{position:fixed;padding-right:14px;-moz-box-sizing: border-box;box-sizing: border-box;}
 #logo {transition: height 0.3s ease 0s, line-height 0.3s ease 0s; margin-top: 5px;  margin-bottom: 5px;position: relative;max-height: 62px;}
@@ -91,15 +102,6 @@ body.page-template-template-front-page-php #main{margin-top:0 !important;}
 /* =Navigation
 -------------------------------------------------------------- */
 #skenav {background:none repeat scroll 0 0 transparent;  position: relative; display:block;  margin-left:auto;  margin-right:auto;  border:medium none;  padding-top: 2px;}
-#skenav:before {content: ''; width: 100%; height: 4px; position: absolute; top: 0; left: 0;
-  background: rgba(166,38,110,1);
-  background: -moz-linear-gradient(left, rgba(166,38,110,1) 0%, rgba(166,38,110,1) 25%, rgba(0,180,159,1) 25%, rgba(0,180,159,1) 50%, rgba(65,119,190,1) 50%, rgba(65,119,190,1) 75%, rgba(89,167,0,1) 75%, rgba(89,167,0,1) 100%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(166,38,110,1)), color-stop(25%, rgba(166,38,110,1)), color-stop(25%, rgba(0,180,159,1)), color-stop(50%, rgba(0,180,159,1)), color-stop(50%, rgba(65,119,190,1)), color-stop(75%, rgba(65,119,190,1)), color-stop(75%, rgba(89,167,0,1)), color-stop(100%, rgba(89,167,0,1)));
-  background: -webkit-linear-gradient(left, rgba(166,38,110,1) 0%, rgba(166,38,110,1) 25%, rgba(0,180,159,1) 25%, rgba(0,180,159,1) 50%, rgba(65,119,190,1) 50%, rgba(65,119,190,1) 75%, rgba(89,167,0,1) 75%, rgba(89,167,0,1) 100%);
-  background: -o-linear-gradient(left, rgba(166,38,110,1) 0%, rgba(166,38,110,1) 25%, rgba(0,180,159,1) 25%, rgba(0,180,159,1) 50%, rgba(65,119,190,1) 50%, rgba(65,119,190,1) 75%, rgba(89,167,0,1) 75%, rgba(89,167,0,1) 100%);
-  background: -ms-linear-gradient(left, rgba(166,38,110,1) 0%, rgba(166,38,110,1) 25%, rgba(0,180,159,1) 25%, rgba(0,180,159,1) 50%, rgba(65,119,190,1) 50%, rgba(65,119,190,1) 75%, rgba(89,167,0,1) 75%, rgba(89,167,0,1) 100%);
-  background: linear-gradient(to right, rgba(166,38,110,1) 0%, rgba(166,38,110,1) 25%, rgba(0,180,159,1) 25%, rgba(0,180,159,1) 50%, rgba(65,119,190,1) 50%, rgba(65,119,190,1) 75%, rgba(89,167,0,1) 75%, rgba(89,167,0,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6266e', endColorstr='#59a700', GradientType=1 );}
 
 #skehead .sub-menu { display: none; }
 #skenav .ske-menu, ul.menu {  font-size: 13px;  margin: 0px;  display:inline-block;  width:auto;  float:right;  }

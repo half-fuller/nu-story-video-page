@@ -1,0 +1,50 @@
+#viewer__player, #viewer__related {
+  background: #eee;
+  padding:0;
+}
+
+.video-js {
+  display: block;
+  width: 100%;
+}
+
+
+.video-js button, .vjs-button, .vjs-time-control {
+  background: #000;
+}
+
+.vjs-progress-control {
+  background: #000;
+
+    .vjs-progress-holder {
+      background: color('gray', 60);
+    }
+
+    .vjs-load-progress {
+      background: color('gray', 30);
+    }
+
+    .vjs-play-progress {
+      background: color('magenta', 60);;
+    }
+}
+
+.video-js button.vjs-big-play-button {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 3em;
+  border-radius: 50px;
+  background: transparent;
+
+  &:before {
+    position: relative;
+  }
+}
+
+@media (min-width: 768px) {
+  #viewer__area {
+    display: flex;
+    flex-direction: row;
+  }
+}
