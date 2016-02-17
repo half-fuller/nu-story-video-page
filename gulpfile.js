@@ -4,6 +4,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
+    autoprefixer = require('gulp-autoprefixer'),
     jade = require('gulp-jade'),
     webserver = require('gulp-webserver');
     image = require('gulp-image');
@@ -17,6 +18,7 @@ var gulp = require('gulp'),
     gulp.task('sass', function () {
       return gulp.src('src/scss/*.scss')
           .pipe(sass())
+          .pipe(autoprefixer())
           .pipe(gulp.dest('dist/css'));
     });
 
