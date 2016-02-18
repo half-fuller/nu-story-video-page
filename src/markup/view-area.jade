@@ -1,6 +1,6 @@
 #viewer__area
   #viewer__player
-    video.video-js(preload="auto" width="auto" height="auto" controls poster="img/poster1.jpg" )
+    video.video-js(preload="auto" controls poster="img/poster1.jpg" data-setup='{}')
       source(src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4")
       source(src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm")
       source(src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg")
@@ -12,4 +12,3 @@
       
   #viewer__related
     include ./player/related.jade
-    .clearfix
