@@ -1,0 +1,88 @@
+#video__content {
+
+  #video__meta {
+    padding: 3em 1em 0 1em;
+  }
+
+  h1 {
+    font-family: "Arvo", "Lato", helvetica, sans-serif;
+    font-size: 1.75em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+}
+
+
+#video__twitter {
+  padding: 3em 1em 0 1em;
+
+  .list-group-item {
+      padding: 0.5em;
+  }
+
+  .media-left {
+    padding-right: 0.5em;
+  }
+
+  .tweet-body {
+    font-size: 0.9em;
+    line-height: 1.2em;
+  }
+
+  .tweet-handle {
+    padding-left: 0.5em;
+    font-size: 0.7em;
+  }
+
+  .tweet-postedTime {
+    font-size: 0.7em;
+  }
+}
+
+#video__transcript {
+  padding: 1em 1em 0 1em;
+  position: relative;
+
+}
+
+#video__transcript .transcript__overlay {
+  background: linear-gradient(to top, rgba(224,224,224,1) 35%,rgba(224,224,224,0) 100%);
+  width: 100%;
+  height: 3em;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  line-height: 5em;
+  color: initial;
+
+  &:hover {
+    text-decoration: none;
+    cursor: default;
+  }
+}
+
+ul#transcript {
+  list-style: none;
+
+  &.contain {
+    max-height: 15em;
+    overflow: hidden;
+  }
+
+  li{
+    margin-bottom: 1em;
+    margin-left: 0;
+    display: flex;
+  }
+
+  .time_stamp {
+    font-size: 0.8em;
+  }
+
+  .time_content {
+    margin-left: 1em;
+    font-size: 0.9em;
+  }
+}

@@ -193,20 +193,16 @@
 
     &::-webkit-scrollbar {
       display: block;
-      height: 0.3em;
+      height: 0.5em;
       padding-bottom: 1em;
     }
 
-    &:hover::-webkit-scrollbar {
-      height: 0.7em;
-    }
-
     &::-webkit-scrollbar-track {
-      background: color('gray', 50);
+      background: color('gray', 40);
     }
 
     &::-webkit-scrollbar-thumb {
-      background: color('magenta', 50);
+      background: color('magenta', 60);
     }
 
 
