@@ -18,3 +18,5 @@ npm-debug.log*
 
 # Not sure if it grabbed it, but it did now.
 .DS_Store
+
+*.zip
