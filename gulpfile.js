@@ -34,7 +34,7 @@ var gulp = require('gulp'),
     gulp.task('jade', function () {
       return gulp.src('src/*.jade')
           .pipe(jade({pretty: true}))
-          .pipe(rename({extname: ".html"}))
+          .pipe(rename('index.html'))
           .pipe(gulp.dest('dist'));
     });
 
@@ -42,7 +42,7 @@ var gulp = require('gulp'),
       return gulp.src('src/img/*')
           .pipe(image({
             pngquant: true,
-            optipng: true,
+            optipng: false,
             zopflipng: true,
             advpng: true,
             jpegRecompress: false,
