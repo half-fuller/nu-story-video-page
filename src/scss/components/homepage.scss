@@ -1,0 +1,76 @@
+.left-title {
+  font-size: 2.25em;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-family: 'Arvo', 'Lato', helvetica, sans-serif;
+}
+
+.mission {
+  margin: 0 auto;
+  padding: 3em 0.5em 0 0.5em;
+  text-align: center;
+
+  .head {
+    font-size: 1.7em;
+    line-height: 1.4em;
+    font-family: 'Arvo', 'Lato', helvetica, sans-serif;
+  }
+
+  .body {
+    font-size: 1.25em;
+    font-weight: 500;
+
+    margin-top: 1.5em
+  }
+}
+
+hr.short {
+  margin: 5em auto;
+  width: 6em;
+  border: 0.35em solid color('magenta', 60);
+}
+
+
+.team {
+  background: #1f1f1f;
+  color: #fff;
+  text-align: center;
+  padding: 3em 0;
+  margin: 4em 0 6em 0;
+
+  h3 {
+    font-size: 2em;
+    color: #fff;
+    padding-bottom: 0.5em;
+  }
+
+  img{
+    max-width: 10em;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .team-mate-name {
+    font-size: 1.5em;
+    margin-top: 1em;
+  }
+  .team-mate-job {
+    margin-top: 0.25em;
+  }
+
+}
+
+
+@media (min-width: 768) {
+
+  .team .container {
+    max-width: 70%;
+  }
+
+  .mission {
+    width: 70%;
+    .head {
+      font-size: 2em;
+    }
+  }
+}
